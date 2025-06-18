@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="Ahorcado.css">
+</head>
+<body>
+    <div class="container">
+        <h1> Pista: <span id="descripcion"></span></h1>
+        <canvas id="hangmanCanvas" width="200" height="200"></canvas>
+        <div id="word"></div>
+        <div id="keyboard"></div>
+        <p><button id="backToHomeButton" onclick="location.href='index.html'">Volver al Menú Principal</button></p>
+        <div id="completionMessageContainer" style="display: none;">
+            <p id="completionMessage">¡Término acertado!</p>
+            <button id="nextTermButton" onclick="cycleNextTerm()">Siguiente</button>
+        </div>
+        <div id="allTermsCompletedContainer" style="display: none;">
+            <p id="allTermsCompletedMessage">¡Has completado todos los términos del juego! 🎉</p>
+            <a href="Memoria1.html">
+                <button id="nextButton" style="display: none;">Avanzar</button>
+            </a>
+        </div>
+
+        <!-- Contenedor para el mensaje de error -->
+        <div id="errorMessageContainer" style="display: none;"></div>
+    </div>
+
+    <script src="Ahorcado1.js"></script>
+</body>
+</html>
+
+

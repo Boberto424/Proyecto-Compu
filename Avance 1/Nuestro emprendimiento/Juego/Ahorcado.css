@@ -1,0 +1,166 @@
+body {
+    background-color: #192e4b;
+    color: #a8bcc3;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    display: inline-block;
+    padding: 20px;
+    background-color: #192e4b;
+}
+
+h1 {
+    color: #f7b612;
+}
+
+canvas {
+    background-color: #a8bcc3;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#word {
+    font-size: 24px;
+    margin: 20px 0;
+    letter-spacing: 10px;
+    color: #f7b612;
+}
+
+#keyboard {
+    margin-top: 20px;
+}
+
+.key {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: #f7b612;
+    color: #192e4b;
+    font-weight: bold;
+    cursor: pointer;
+    user-select: none;
+}
+
+.key.disabled {
+    background-color: #a8bcc3;
+    cursor: not-allowed;
+}
+
+/* Estilo para el mensaje de error */
+
+#errorMessageContainer {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #a8bcc3;
+    color: #a94442;
+    border: 1px solid #a8bcc3;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+#errorMessageContainer button {
+    padding: 10px 20px;
+    background-color: #f7b612;
+    color: #192e4b;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#errorMessageContainer button:hover {
+    background-color: #e0a60f;
+}
+
+
+/* Otros estilos previos */
+#completionMessageContainer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #a8bcc3;
+    color: #192e4b;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+#completionMessage {
+    font-size: 20px;
+    color: #000000; /* Color cambiado a negro */
+    margin-bottom: 15px;
+}
+
+#nextTermButton {
+    padding: 10px 20px;
+    background-color: #f7b612;
+    color: #192e4b;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#nextTermButton:hover {
+    background-color: #e0a60f;
+}
+
+#allTermsCompletedContainer {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #a8bcc3;
+    color: #192e4b;
+    border-radius: 10px;
+    display: inline-block;
+    text-align: center;
+}
+
+#allTermsCompletedMessage {
+    font-size: 20px;
+    color: #000000; /* Color cambiado a negro */
+}
+
+#nextButton {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #f7b612;
+    color: #192e4b;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    display: none;
+}
+
+#nextButton:hover {
+    background-color: #e0a60f;
+}
+
+#backToHomeButton {
+    padding: 12px 24px;
+    background-color: #a8bcc3;
+    color: #192e4b;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+}
+
+#backToHomeButton:hover {
+    background-color: #a8bcc3;
+}
+
+#backToHomeButton:active {
+    background-color: #a8bcc3;
+}
+
+#backToHomeButton:focus {
+    outline: none;
+    box-shadow: 0 0 5px 2px #a8bcc3;
+}
